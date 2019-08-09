@@ -1,8 +1,9 @@
 import axios from "axios";
 
-const addRandomPokemon = pokemon => ({
+const addRandomPokemon = (pokemon, err) => ({
   type: "ADD_RANDOM_POKEMON",
-  pokemon: pokemon
+  pokemon: pokemon,
+  error: err
 });
 
 const randomNum = max => {
@@ -23,8 +24,9 @@ const getRandomPokemon = () => {
         };
         dispatch(addRandomPokemon(pokemon));
       })
-      .catch(error => console.log(error));
+      .catch(error => dispatch(addRandomPokemon({}, error)));
   };
 };
+
 
 export default getRandomPokemon;

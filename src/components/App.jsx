@@ -1,5 +1,5 @@
+/* eslint react/prop-types: 0 */
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import PokemonsContainer from "../containers/PokemonsContainer.js";
 import RandomPokemonsContainer from "../containers/Random_PokemonContainer.js";
 import store from "../store/Store.js";
@@ -11,7 +11,7 @@ class App extends Component {
     super(props);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     store.dispatch(getPokemons());
     store.dispatch(getRandomPokemon());
   }

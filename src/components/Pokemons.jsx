@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+/* eslint react/prop-types: 0 */
+import React from "react";
 
 const PokemonsComponent = props => {
   return (

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --watch",
-    "prod": "webpack --mode production"
+    "prod": "webpack --mode production",
+    "lint": "eslint '**/*.{js,jsx}'"
   },
   "author": "Rebecca",
   "license": "ISC",
@@ -29,5 +30,10 @@
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-redux": "^3.0.1"
   }
 }

@@ -1,11 +1,11 @@
 import RandomPokemonComponent from "../components/Random_pokemon.jsx";
 import getRandomPokemon from "../actions/Randomize.js";
-import React from "react";
 import { connect } from "react-redux";
 
 const mapStateToProps = state => {
   return {
-    pokemon: state.addPokemonReducer.pokemon
+    pokemon: state.addPokemonReducer.pokemon,
+    error: state.addPokemonReducer.error
   };
 };
 
