@@ -3,7 +3,7 @@ import React from "react";
 
 const PokemonsComponent = props => {
   return (
-    <div id="main">
+    <div id="boxes">
       <div className="pokemons">
         {props.pokemons.map(pokemon => (
           <div className="pokemon" key={pokemon.name}>

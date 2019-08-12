@@ -7,7 +7,9 @@
 html {
 	font-size: 100%;
 }
-
+#main {
+	margin-right: 30%;
+}
 .header {
 	color: white;
 	font-size: 5rem;
@@ -16,11 +18,8 @@ html {
 
 .pokemons {
 	display: flex;
-	position: absolute;
-	top: 25%;
-	left: 10%;
-	transform: translate(-10%, -25%);
-	margin: 3rem;
+	align-items: center;
+    justify-content: center;
 }
 .pokemon {
 	background-color: #fff;
@@ -35,20 +34,12 @@ html {
 	outline:0 !important;
 }
 
-.random_pokemon {
-	background-color: #fff;
-	height: 12rem;
-	width: 12rem;
-	padding-top: 2rem;
-	margin: 2rem;
-	border-radius: 50%;
-	text-align: center;
-	box-shadow: 0 0 1rem rgba(255, 255, 255, 1);
-	outline:0 !important;
-	position: absolute;
-	top: 75%;
-	left: 30%;
-	transform: translate(-30%, -75%);
+#box {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .randomize_btn {
@@ -57,4 +48,10 @@ html {
 	outline:0 !important;
 	border-radius: 1rem;
 	margin: 1rem;
+}
+
+.randomize_btn {
+	position: absolute;
+	top: 85%;
+	left: 28.5%;
 }

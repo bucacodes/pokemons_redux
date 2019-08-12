@@ -5,8 +5,8 @@ const RandomPokemonComponent = props => {
   let { name, height, weight, base_experience, images } = props.pokemon;
   console.log(props.error);
   return (
-    <div id="main">
-      <div className="random_pokemon">
+    <div id="box">
+      <div className="pokemon">
         <p className="pName">{name ? `Name: ${name}` : ''}</p>
         <p className="pHeight">{height ? `Height: ${height}` : ''}</p>
         <p className="pWeight">{weight ? `Weight: ${weight}`: ''}</p>
