@@ -9,6 +9,7 @@
 html {
   font-size: 100%;
   font-family: 'Indie Flower';
+  background-color: #c4dfff;
 }
 #main {
   margin-right: 30%;
@@ -29,7 +30,7 @@ html {
   background-color: #fff;
   height: 12rem;
   width: 12rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   margin: 2rem;
   border-radius: 50%;
   display: inline-block;
