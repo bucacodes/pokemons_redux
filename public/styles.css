@@ -18,6 +18,8 @@ html {
 
 .pokemons {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 .pokemon {
@@ -35,6 +37,7 @@ html {
 
 #box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -45,10 +48,4 @@ html {
   outline: 0 !important;
   border-radius: 1rem;
   margin: 1rem;
-}
-
-.randomize_btn {
-  position: absolute;
-  top: 85%;
-  left: 28.5%;
 }
