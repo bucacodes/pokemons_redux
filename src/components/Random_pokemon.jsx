@@ -3,7 +3,6 @@ import React from "react";
 
 const RandomPokemonComponent = props => {
   let { name, height, weight, base_experience, images } = props.pokemon;
-  console.log(props.error);
   return (
     <div id="box">
       <div className="pokemon">
